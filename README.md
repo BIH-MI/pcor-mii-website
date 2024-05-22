@@ -19,7 +19,7 @@ The PCOR-MII website provides information on the PCOR-MII consortium, its partne
 ## Directory Structure
 
 ```
-private-aim-website/
+pcor-mii-website/
 │
 ├── de/                # German translation of the website
 │   └── datenschutz.html
