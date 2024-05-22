@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>PCOR-MII Project</title>
+    <style>
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8); /* Light background to ensure readability */
+            padding-left: 30px; /* Padding on the left */
+            padding-right: 30px; /* Padding on the right */
+        }
+        .content {
+            padding: 20px;
+            margin-top: 20px; /* Adjusted to ensure content is not hidden by fixed navbar */
+        }
+        .custom-hr {
+            height: 3px;
+            background-image: linear-gradient(to right, transparent, black, transparent);
+            border: none;
+            margin: 20px 0;
+        }
+        .overlay-container {
+            position: relative;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            overflow: hidden;
+        }
+        .overlay-container img {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+        .overlay-text img {
+            width: 90px;
+            height: 74px;
+            margin-bottom: 10px;
+        }
+        .overlay-text p {
+            margin-bottom: 20px;
+        }
+        .responsive-image {
+            max-width: 70%; /* Set a maximum width */
+            height: auto; /* Ensure the height adjusts proportionally */
+        }
+        @media (max-width: 768px) {
+            .overlay-text {
+                padding: 10px;
+                width: 90%;
+            }
+            .overlay-text p {
+                font-size: 14px;
+            }
+        }
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer .social-icons a {
+            margin: 0 10px;
+            color: #495057;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../media/PCOR-MII_logo.png" alt="Logo" width="60" height="48" class="d-inline-block align-text-top">
+                PCOR-MII
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publikationen.html">Publikationen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay-container">
+        <img src="../media/index.jpg" class
+        ="img-fluid" alt="Index Image">
+        <div class="overlay-text">
+            <img src="../media/PCOR-MII_logo.png" alt="Logo">
+            <h4><b>P</b>atient-<b>C</b>entered <b>O</b>utcomes <b>R</b>esearch in der Medizininformatik-Initiative (MII)</p></h4>
+            <p>Ziel von PCOR-MII ist es, die digitale Erfassung von PROs in Kliniken zu etablieren und diese in Verbindung mit weiteren medizinischen Informationen – beispielsweise zur Therapie und Diagnostik – auszuwerten und wertvolle Zusammenhänge zwischen den subjektiven und objektiven Parametern zur Messung des Therapieerfolgs zu erforschen.</p>
+            <a href="#projekt" class="btn btn-primary">Mehr über das Projekt</a>
+        </div>
+    </div>
+    <div class="content container" id="projekt">
+        <div class="row">
+            <div class="col-12">
+                <h1>Willkommen beim PCOR-MII Projekt</h1>
+                <p><i>Die steigende Lebenserwartung und der zunehmende Anteil älterer Menschen in den Industrieländern führen dazu, dass chronische Erkrankungen heute mehr als 80 Prozent der weltweiten Krankheitslast ausmachen. Damit ergeben sich neue Herausforderungen für die Medizin: Es gilt, ein optimiertes, multidimensionales Krankheitsmanagement zu entwickeln und gleichzeitig eine verbesserte Lebensqualität als zentrales Behandlungsziel zu verfolgen. Dabei ist es von entscheidender Bedeutung, die Perspektive der Patientinnen und Patienten einzubeziehen. Sie verstehen die alltäglichen Auswirkungen ihrer Erkrankung am besten und können wertvolle Einblicke in die Effektivität und Verträglichkeit von Therapien geben.</i></p>
+                <p>Ein solcher Einbezug der Patientenperspektive führt nicht nur zu einer patientenorientierten, individualisierten Behandlung, sie ermöglicht auch schnellere Interventionen bei Verschlechterungen und stärkt gleichzeitig die therapeutische Beziehung. So wird eine umfassende, ganzheitliche Versorgung ermöglicht, die sowohl objektive medizinische Indikatoren als auch das subjektive Wohlbefinden der Patientinnen und Patienten berücksichtigt. Bei der Umsetzung spielt die Messung des subjektiv erlebten Gesundheitszustandes mithilfe von Patient-Reported Outcomes (PROs) in Fragebogenform eine entscheidende Rolle.</p>
+                <p>Der PCOR-MII-Verbund setzt genau hier an. Ziel ist es, die digitale Erfassung von PROs in Kliniken zu etablieren und diese in den nationalen Kerndatensatz der Medizininformatik-Initiative (MII) zu integrieren. Dadurch soll es möglich werden, diese in Verbindung mit weiteren medizinischen Informationen – beispielsweise zur Therapie und Diagnostik – auszuwerten und wertvolle Zusammenhänge zwischen den subjektiven und objektiven Parametern zur Messung des Therapieerfolgs zu erforschen.</p>
+                
+                <img class="img-fluid responsive-image d-block mx-auto" src="../media/pro_integration.jpg" alt="Beschreibung des Bildes">
+                <figcaption class="text-center mt-2">
+                    <i>Das Bild zeigt den Unterschied zwischen verteilter Analyse und Datenzusammenführung: 
+                    Links sind mehrere Knotenpunkte einer dezentralen Analyse zu sehen, während rechts 
+                    die Datenströme zu einem zentralen Ort fließen.</i>
+                </figcaption>
+                <br>
+
+                <p>Die digitalen Lösungen von PCOR-MII sollen in drei spezifischen klinischen Szenarien eingesetzt werden:</p>
+                    <ul><li>Anorexia Nervosa,</li>
+                    <li>persistierende somatische Symptome und</li>
+                    <li>die Nachsorge nach Nierentransplantationen.</li></ul>
+                <p>Bei Anorexia Nervosa sollen Risikofaktoren besser verstanden, bei persistierenden somatischen Symptomen wirksame Behandlungen identifiziert und bei Nierentransplantationen die langfristige Medikamenteneinnahme sichergestellt werden.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="custom-hr">
+    <div class="row text-center">
+      <p>Eine Übersicht über weitere Use Cases und Projekt der MII finden Sie auf der&nbsp;<a href="https://www.medizininformatik-initiative.de/de/use-cases-und-projekte">MII-Webseite.</a></p>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">PCOR-MII</h5>
+                    <p>Dieses Projekt wird im Rahmen der Medizininformatik-Initiative unter den Förderkennzeichen xxxxxxxxx finanziert.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#projekt" class="text-dark">Datenschutz</a></li>
+                        <li><a href="#team" class="text-dark">Impressum</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Kontakt</h5>
+                    <p>Für Fragen können Sie sich auch jederzeit an die folgende E-Mail-Adresse wenden:</p>
+                    <p>Email: info@pcor-mii.de</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 bg-light">
+            © 2024 PCOR-MII
+        </div>
+    </footer>
+</body>
+</html>
